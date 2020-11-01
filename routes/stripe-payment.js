@@ -12,11 +12,11 @@ module.exports = {
             stripe.charges.create(body, (error, response) => {
                 if (error) {
                     res.status(500).json({ error: error });
-                    console.log(error)
+                    // console.log(error)
                 }
                 else {
                     res.status(200).json({ success: response });
-                    console.log(response)
+                    // console.log(response)
                 }
             })
         });
